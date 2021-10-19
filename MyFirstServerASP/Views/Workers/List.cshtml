@@ -1,0 +1,12 @@
+﻿
+<h1>Все работники</h1>
+<h3>@ViewBag.Workers</h3>
+@{
+    foreach (var worker in Model.AllWorkers)
+    {
+        <div>
+            <h2>@worker.firstName @worker.lastName</h2>
+            <p><span>Должность:</span> @worker.position</p>
+        </div>
+    }
+}
