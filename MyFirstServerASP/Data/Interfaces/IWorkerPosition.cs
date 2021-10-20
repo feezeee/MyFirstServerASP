@@ -8,6 +8,6 @@ namespace MyFirstServerASP.Data.Interfaces
 {
     public interface IWorkerPosition
     {
-        IEnumerable<Position> Positions { get; set; }
+        IEnumerable<Position> Positions { get; }
     }
 }
